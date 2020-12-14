@@ -1,22 +1,24 @@
 html,
 body {
-  letter-spacing: 0.4px;
+  /* letter-spacing: 0.2px; */
   font-family: Montserrat, sans-serif;
 }
 
 .grey1 {
-  background: #f8f8f8;
+  background: #fbfbfb;
 }
+
 header {
   /* padding-top: 24px; */
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #f3f1f1;
   position: fixed;
   width: 100%;
-  background: #f8f8f8;
+  background: #fbfbfb;
   /* margin-bottom: 90px; */
+  z-index: 1;
 }
 
 .menu-bar {
@@ -46,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: rgb(255, 247, 203);
+  background-color: #faf3eb;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
@@ -58,9 +60,11 @@ nav ul li .hit {
 
 .divide {
   color: #ececec;
+  padding: 0;
+  margin: 0;
 }
 
-.title {
+nav .title {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -101,15 +105,17 @@ nav ul li .hit {
 
 ul li:hover > ul {
   display: inherit;
-  left: 15px;
+  left: 5px;
 }
 
 .children li {
   float: none;
   display: list-item;
   position: relative;
-  background-color: white;
+  background-color: #fbfbfb;
+  
 }
+
 
 .hit {
   width: 34px;
@@ -226,6 +232,35 @@ h2 {
   color: #b8b8b8;
   padding-top: 10px;
   margin-bottom: 85px;
+}
+
+.grey1 .fig1 .circle1 {
+  width: 258px;
+  height: 258px;
+  margin-left: -40px;
+  margin-top: 159px;
+  background: linear-gradient(
+    173.6deg,
+    #f6f6f6 -6.74%,
+    rgba(246, 246, 246, 0) 117.18%
+  );
+  border-radius: 50%;
+  position: absolute;
+}
+
+.grey1 .fig1 .circle2 {
+  width: 92px;
+  height: 92px;
+  margin-left: 1162px;
+  margin-top: 168px;
+  background: linear-gradient(
+    173.6deg,
+    #f6f6f6 -6.74%,
+    rgba(246, 246, 246, 0) 117.18%
+  );
+  transform: rotate(-165deg);
+  border-radius: 50%;
+  position: absolute;
 }
 
 .result {
@@ -439,6 +474,14 @@ h2 {
   margin-bottom: 40px;
 }
 
+.figure .bg_figure {
+  width: 100%;
+  height: 417px;
+  padding-left: -344px;
+  background: url("images/Vector\ 1.png");
+  /* z-index: 0; */
+}
+
 .figure table {
   margin: auto;
   font-family: Montserrat, sans-serif;
@@ -447,7 +490,7 @@ h2 {
   font-size: 14px;
   line-height: 20px;
   /* identical to box height, or 143% */
-
+  z-index: 1;
   color: #313131;
 }
 
@@ -582,3 +625,108 @@ h2 {
   margin-bottom: 30px;
 }
 
+.darkgrey {
+  background: #313131;
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+
+.darkgrey .links {
+  width: 1186px;
+  margin: auto;
+  display: flex;
+  display: space-between;
+  margin-bottom: 44px;
+}
+
+.darkgrey .line {
+  content: " ";
+  width: 1168px;
+  height: 1px;
+  background: #484848;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+.darkgrey .links .link {
+  /* display: block; */
+  padding-right: 73px;
+}
+
+.darkgrey .links .link:last-child {
+  padding: 0px;
+}
+
+.darkgrey .links .title {
+  color: white;
+  /* font-family: Montserrat; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  padding-bottom: 15px;
+  color: #ffffff;
+}
+
+.darkgrey .links .link a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-decoration: none;
+  color: #d3d2d2;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 13px;
+}
+
+.darkgrey .contacts {
+  width: 1168px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.darkgrey .contacts p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.darkgrey .contacts p span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #d3d2d2;
+}
+
+.darkgrey .contacts div a {
+  display: inline;
+  padding-right: 24px;
+}
+
+.darkgrey .contacts div a:last-child {
+  padding-right: 0;
+}
+
+.darkgrey .contacts p:last-child {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #848484;
+}
