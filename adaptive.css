@@ -490,8 +490,9 @@
     height: 92.42px;
     margin-left: 0px;
     margin: auto;
-  }.main__container {
-    max-width: 263px;
+  }
+  .main__container {
+    max-width: 283px;
   }
   .main__title {
     font-size: 20px;
